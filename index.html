@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentStyle — Стоматология</title>
+    <!-- Подключаем внешний CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts и Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Анимированный фон -->
+    <div class="bg-animated"></div>
+
+    <!-- Плавающие элементы -->
+    <div class="floating-elements" id="floatingElements"></div>
+
+    <!-- Навигация -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">🦷 DentStyle</div>
+        <div class="contact-top">
+            <a href="tel:+79667222244" class="phone"><i class="fas fa-phone"></i> 8 (966) 72-22-44</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <span id="themeIcon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero parallax-layer" id="hero">
+        <h1>Стоматология DentStyle</h1>
+        <p class="slogan" id="typewriter"></p>
+    </section>
+
+    <!-- Услуги -->
+    <h2 class="section-title">🦷 Наши услуги</h2>
+    <div class="services-grid" id="servicesGrid">
+        <div class="service-card">
+            <img src="https://dentalroott.ru/upload/iblock/3c1/c68y9ay02lo27iwoz8ngu6z9amq6411e/unhealthy_emotion_teeth_with_toothbrush_blue_background_dental_health_care_concept_3d_illustration_r.webp" alt="Лечение зуба" loading="lazy"
+            onerror="this.src='https://placehold.co/400x300/e8f4fd/0d6efd?text=Лечение+зуба'">
+            <h3>Лечение зуба</h3>
+            <p>Современное безболезненное лечение</p>
+            <p class="price">3 000 ₽</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.biodent-samara.ru/assets/template/assets/img__new_design/blog/chto-delat-posle-udaleniya-zuba.jpg" alt="Удаление зуба" loading="lazy"
+            onerror="this.src='https://placehold.co/400x300/fde8e8/dc3545?text=Удаление+зуба'">
+            <h3>Удаление зуба</h3>
+            <p>Быстрое и аккуратное удаление</p>
+            <p class="price">4 000 ₽</p>
+        </div>
+        <div class="service-card">
+            <img src="https://b-stom.ru/upload/medialibrary/1c1/asqtzyb2pnb26xe8gzh3mtigtuvo814u/a32aea17_e73b_4096_ba3b_cd58cc96ce52.png" alt="Чистка зубов" loading="lazy"
+            onerror="this.src='https://placehold.co/400x300/e8fdf5/00c9a7?text=Чистка+зубов'">
+            <h3>Чистка зубов</h3>
+            <p>Профессиональная гигиена полости рта</p>
+            <p class="price">2 500 ₽</p>
+        </div>
+        <div class="service-card">
+            <img src="https://akademstom.ru/images/articles/dental_implant.webp" alt="Импланты" loading="lazy"
+            onerror="this.src='https://placehold.co/400x300/f5e8fd/6f42c1?text=Импланты'">
+            <h3>Импланты</h3>
+            <p>Восстановление зубного ряда</p>
+            <p class="price">20 000 ₽</p>
+        </div>
+        <div class="service-card">
+            <img src="https://mitino-center.ru/upload/medialibrary/f9c/ilrf30zu57jmfhji9smzpf0pj8jt5hkh/ChatGPT-Image-26-iyun.-2025-g._-01_49_35.png" alt="Брекеты" loading="lazy"
+            onerror="this.src='https://placehold.co/400x300/fde8f8/e83e8c?text=Брекеты'">
+            <h3>Брекеты</h3>
+            <p>Исправление прикуса любой сложности</p>
+            <p class="price">50 000 ₽</p>
+        </div>
+    </div>
+
+    <!-- Акция -->
+    <div class="promo-section">
+        <div class="promo-card">
+            <h2>🎉 Акция!</h2>
+            <p>Приведи друга и получи</p>
+            <div class="discount">50% скидку!</div>
+            <p>Друг тоже получает <strong>50% скидку</strong> на любую услугу</p>
+            <p style="font-size:0.9rem;color:var(--text-secondary);margin-top:10px;">*Акция действует до конца месяца</p>
+        </div>
+    </div>
+
+    <!-- Новости -->
+    <h2 class="section-title">📰 Новости стоматологии</h2>
+    <div class="news-grid" id="newsGrid">
+        <div class="news-card">
+            <div class="news-date">15 мая 2026</div>
+            <h4>Новый метод безболезненного лечения кариеса</h4>
+            <p>Учёные представили инновационный гель, который восстанавливает эмаль без бормашины. Технология уже проходит клинические испытания.</p>
+        </div>
+        <div class="news-card">
+            <div class="news-date">10 мая 2026</div>
+            <h4>Импланты нового поколения: приживаемость 99%</h4>
+            <p>Ведущие производители представили импланты с биосовместимым покрытием, которое ускоряет заживление в 2 раза.</p>
+        </div>
+        <div class="news-card">
+            <div class="news-date">3 мая 2026</div>
+            <h4>Как правильно чистить зубы: советы экспертов</h4>
+            <p>Стоматологи напоминают: чистка зубов должна длиться не менее 2 минут. Важно уделять внимание каждому участку.</p>
+        </div>
+        <div class="news-card">
+            <div class="news-date">28 апреля 2026</div>
+            <h4>Цифровая стоматология: 3D-моделирование улыбки</h4>
+            <p>Теперь вы можете увидеть свою будущую улыбку ещё до начала лечения благодаря технологиям 3D-визуализации.</p>
+        </div>
+    </div>
+
+    <!-- Контакты -->
+    <div class="contacts" id="contacts">
+        <h2 class="section-title" style="left:auto;transform:none;">📍 Контакты</h2>
+        <p class="address"><i class="fas fa-map-marker-alt"></i> улица Умара Кадырова, 21</p>
+        <a href="tel:+79667222244" class="phone-big"><i class="fas fa-phone"></i> 8 (966) 72-22-44</a>
+        <p style="margin-top:20px;color:var(--text-secondary);">Работаем ежедневно с 9:00 до 21:00</p>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <p>© 2026 DentStyle. Все права защищены. Сделано с ❤️</p>
+    </footer>
+
+    <!-- Скрипты (оставлены в HTML для удобства) -->
+    <script>
+        // ====== ГЕНЕРАЦИЯ ПЛАВАЮЩИХ ЭЛЕМЕНТОВ ======
+        const floatingContainer = document.getElementById('floatingElements');
+        for (let i = 0; i < 25; i++) {
+            const el = document.createElement('span');
+            const isTooth = Math.random() > 0.4;
+            el.className = isTooth ? 'floating-tooth' : 'floating-star';
+            el.textContent = isTooth ? '🦷' : '✨';
+            el.style.left = Math.random() * 90 + '%';
+            el.style.top = Math.random() * 90 + '%';
+            el.style.animationDelay = Math.random() * 8 + 's';
+            el.style.animationDuration = (5 + Math.random() * 10) + 's';
+            el.style.fontSize = (1 + Math.random() * 2.5) + 'rem';
+            floatingContainer.appendChild(el);
+        }
+
+        // ====== ПЕЧАТАЮЩИЙСЯ ТЕКСТ ======
+        const slogans = [
+            'Ваша улыбка — наша работа!',
+            'Современная стоматология для всей семьи.',
+            'Здоровые зубы — залог уверенности!',
+            'Безболезненное лечение с комфортом.',
+            'Качество, проверенное временем.'
+        ];
+        let sloganIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typewriterEl = document.getElementById('typewriter');
+
+        function typeWriter() {
+            const current = slogans[sloganIndex];
+            if (!isDeleting) {
+                typewriterEl.innerHTML = current.substring(0, charIndex + 1) + '<span class="cursor"></span>';
+                charIndex++;
+                if (charIndex === current.length) {
+                    isDeleting = true;
+                    setTimeout(typeWriter, 2000);
+                    return;
+                }
+            } else {
+                typewriterEl.innerHTML = current.substring(0, charIndex) + '<span class="cursor"></span>';
+                charIndex--;
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    sloganIndex = (sloganIndex + 1) % slogans.length;
+                }
+            }
+            setTimeout(typeWriter, isDeleting ? 40 : 80);
+        }
+        typeWriter();
+
+        // ====== ПЕРЕКЛЮЧЕНИЕ ТЕМЫ ======
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+
+        const savedTheme = localStorage.getItem('dentstyle-theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-theme');
+            themeIcon.textContent = '☀️';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const isDark = body.classList.contains('dark-theme');
+            themeIcon.textContent = isDark ? '☀️' : '🌙';
+            localStorage.setItem('dentstyle-theme', isDark ? 'dark' : 'light');
+            themeToggle.style.transform = 'scale(0.85)';
+            setTimeout(() => { themeToggle.style.transform = 'scale(1)'; }, 150);
+        });
+
+        // ====== ПЛАВНОЕ ПОЯВЛЕНИЕ КАРТОЧЕК ======
+        const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .news-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // ====== 3D TILT ЭФФЕКТ ======
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / centerY * -12;
+                const rotateY = (x - centerX) / centerX * 12;
+                card.style.transform = `translateY(-10px) scale(1.03) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        // ====== ПАРАЛЛАКС ПРИ ДВИЖЕНИИ МЫШИ ======
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth - 0.5;
+            const y = e.clientY / window.innerHeight - 0.5;
+            const hero = document.getElementById('hero');
+            if (hero) {
+                hero.style.transform = `translate(${x * 15}px, ${y * 15}px)`;
+            }
+            const floatingEls = document.querySelectorAll('.floating-tooth, .floating-star');
+            floatingEls.forEach((el, i) => {
+                const speed = 1 + i * 0.3;
+                el.style.transform = `translate(${x * speed * 20}px, ${y * speed * 20}px)`;
+            });
+        });
+
+        console.log('🦷 DentStyle — сайт готов! Все анимации активны.');
+    </script>
+</body>
+</html>
